@@ -5,7 +5,16 @@
 
 body
 {
-background-color: antiquewhite;
+    font-family: "Ropa Sans", sans-serif;
+    font-size: 14px;
+
+}
+
+header
+{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 a
@@ -20,6 +29,14 @@ a
 
 #inicio
 {
+    background-color: black;
+
+}
+
+#inicio video
+{
+    width: 100%;
+    
 
 }
 
