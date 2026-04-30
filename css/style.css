@@ -117,10 +117,12 @@ h2
 
 .boton.boton-blanco
 {
+    width: 50%;
     background-color: #ffffff;
     color: #000000;
     border: none;
     border-radius: 5px;
+    display: inline-block;
 }
 
 .boton.boton-centrado
@@ -132,6 +134,19 @@ h2
 
 
 .boton:hover
+{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.ball
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball:hover
 {
     opacity: 0.8;
     transform: scale(1.1);
@@ -259,6 +274,11 @@ h2
     text-align: right;
 }   
 
+.texto-izquierda
+{
+    text-align: left;
+}
+
 .logo-comunicado
 {
     
@@ -345,5 +365,30 @@ h2
     background-color: #005eff;
     color: #ffffff;
     
+}
+
+@media (max-width: 767px)
+{
+    .logo
+    {
+        width: 75px;
+    }
+
+    .container
+    {
+        width: 100%;
+    }
+    .fila
+    {
+        flex-direction: column;
+    }
+    .columna
+    {
+        width: 100%;
+    }
+    .boton
+    {
+        width: 100%;
+    }
 }
 
