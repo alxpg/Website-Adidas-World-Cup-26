@@ -146,8 +146,6 @@ h2
 
 .img-full:hover
 {
-    opacity: 0.8;
-    filter: blur(0.5);
     cursor: pointer;
 }
 
@@ -321,7 +319,7 @@ h2
 #estadios .contenedor-estadio img
 {
     filter: grayscale(1);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #estadios .contenedor-estadio:hover img
