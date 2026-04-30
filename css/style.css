@@ -6,7 +6,7 @@
 body
 {
     font-family: "Ropa Sans", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
@@ -15,28 +15,329 @@ header
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 9999;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+header a
+{
+    color:#ffffff;
+}
+
+header nav a
+{
+    color:#ffffff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer ul li a
+{
+    color: #000000;
+    font-size: 20px;
 }
 
 a
 {
+    text-decoration: none;
+    display: inline-block;
+}
 
+h1
+{
+    font-size: 40px;
+}
+h2
+{
+    font-size: 25px;
+}
+
+
+.logo
+{
+    width: 100px;
+    height: auto;
 }
 
 .boton
 {
+    width: 20%;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-align: center;
+}
 
+.boton.boton-celeste
+{
+    background-color: #005eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton.boton-negro
+{
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton.boton-blanco
+{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton:hover
+{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.img-full
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-full:hover
+{
+    opacity: 0.8;
+    filter: blur(0.5);
+    cursor: pointer;
+}
+
+.container
+{
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.container-full
+{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.fila
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.fila-alineada-centrada
+{
+    justify-content: center;
+}
+
+.interno-t
+{
+    padding-top: 50px;
+}
+
+.interno-b
+{
+    padding-bottom: 50px;
+}
+.interno-l
+{
+    padding-left: 50px;
+}
+.interno-r
+{
+    padding-right: 50px;
+}
+
+.externo-b
+{
+    margin-bottom: 15px;
+}
+
+.columna
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.columna-20
+{
+    width: 20%;
+}
+
+.columna-25
+{
+    width: 25%;
+}
+
+.columna-33
+{
+    width: 33.33%;
+}
+
+.columna-50
+{
+    width: 50%;
+}
+
+.columna-60
+{
+    width: 60%;
+}
+
+.columna-40
+{
+    width: 40%;
+}
+
+.columna-75
+{
+    width: 75%;
+}
+
+.columna-100
+{
+    width: 100%;
+}
+
+.texto-centrado
+{
+    text-align: center;
+}
+
+.texto-derecha
+{
+    text-align: right;
+}   
+
+.logo-comunicado
+{
+    
+    width: 50px;
+    height: auto;
 }
 
 #inicio
 {
     background-color: black;
-
+    position: relative;
 }
 
 #inicio video
 {
     width: 100%;
-    
+    opacity: 0.5;
+    filter: grayscale(1);
+    height: 100%;
+}
 
+#inicio .bloque-inicio
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33.33%;
+    color: white;
+    text-align: center;
+    
+}
+
+#inicio .bloque-inicio h1
+{
+    margin-bottom: 10px;
+}
+
+#estadios .contenedor-estadio
+{
+    position: relative;
+    cursor: pointer;
+}
+
+#estadios .contenedor-estadio h3
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px 10px;
+    margin: 0;
+    font-size: 14px;
+}
+
+#estadios .contenedor-estadio img
+{
+    filter: grayscale(1);
+    border-radius: 10px;
+}
+
+#estadios .contenedor-estadio:hover img
+{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+#estadios .contenedor-estadio:hover h3
+{
+    display: none;
+}
+
+#masinformacion
+{
+    background-color: #000000;
+    color: white;
+    padding: 50px 0;
+}
+
+#accesos
+{
+    background-color: #005eff;
+    color: #ffffff;
+    
 }
 
